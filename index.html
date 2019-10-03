@@ -15,13 +15,13 @@
                 <input type="text" name="lname" tabindex="2" /> <br>
 
                 <label>Email Address</label> <br>
-                <input type="email" placeholder=" jondoe@email.com" name="email" tabindex="3" /> <br>
+                <input type="email" placeholder=" johndoe@email.com" name="email" tabindex="3" /> <br>
 
                 <label>Country</label> <br>
-                    <select tabindex="4">
-                        <option>Choose a country</option>
-                        <option>USA</option>
-                        <option>Canada</option>
+                    <select name="country" id="country" tabindex="4" required>
+                        <option value="default">Choose a country</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
                     </select>
                 <br>
                 <label>Biography</label> <br>
@@ -38,13 +38,13 @@
                 <textarea tabindex="7" required></textarea> <br>
 
                 <label>Occupation</label> <br>
-                    <select tabindex="8">
-                        <option>Choose an occupation</option>
-                        <option>Student</option>
-                        <option>Self-Employed</option>
-                        <option>Teacher</option>
-                        <option>None</option>
-                        <option>Prefer Not To Say</option>
+                    <select name="occupation" id="occupation" tabindex="8" required> 
+                        <option value="occupy">Choose an occupation</option>
+                        <option value="student">Student</option>
+                        <option value="selfemp">Self-Employed</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="jobless">None</option>
+                        <option value="nosay">Prefer Not To Say</option>
                     </select>
                 <br>
                 <label>Cat's Name</label> <br>
@@ -58,10 +58,11 @@
         <div class="set3">
             <form>
                 <label>Type Of Talent</label> <br>
-                    <select tabindex="11">
-                        <option>Choose a talent</option>
-                        <option>None</option>
-                        <option>Prefer Not To Say</option>
+                    <select name="talent" id="talent" tabindex="11" required>
+                        <option value="choose">Choose a talent</option>
+                        <option value="none">None</option>
+                        <option value="dance">Dancing</option>
+                        <option value="sing">Singing</option>
                     </select> <br>
 
                 <label>Favorite Drink</label> <br>
